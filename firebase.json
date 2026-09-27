@@ -1,0 +1,28 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "claudine-childcare-tracker",
+          "appId": "1:112626312062:android:f9830a6f7554850775492f",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "claudine-childcare-tracker",
+          "configurations": {
+            "android": "1:112626312062:android:f9830a6f7554850775492f",
+            "web": "1:112626312062:web:1096997a9c274a5d75492f"
+          }
+        }
+      }
+    }
+  },
+  "firestore": {
+    "rules": "firestore.rules"
+  },
+  "storage": {
+    "rules": "storage.rules"
+  }
+}

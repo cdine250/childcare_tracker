@@ -1,0 +1,43 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Users
+    match /users/{userId} {
+      allow read, create, update, delete:
+        if request.auth != null
+        && request.auth.uid == userId;
+    }
+
+    // Children
+    match /children/{childId} {
+      allow read, create, update, delete:
+        if request.auth != null
+        && (
+          resource.data.parentId == request.auth.uid
+          || request.resource.data.parentId == request.auth.uid
+        );
+    }
+
+    // Activities
+    match /activities/{activityId} {
+      allow read, create, update, delete:
+        if request.auth != null
+        && (
+          resource.data.parentId == request.auth.uid
+          || request.resource.data.parentId == request.auth.uid
+        );
+    }
+
+    // Milestones
+    match /milestones/{milestoneId} {
+      allow read, create, update, delete:
+        if request.auth != null
+        && (
+          resource.data.parentId == request.auth.uid
+          || request.resource.data.parentId == request.auth.uid
+        );
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "112626312062",
+    "project_id": "claudine-childcare-tracker",
+    "storage_bucket": "claudine-childcare-tracker.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:112626312062:android:f9830a6f7554850775492f",
+        "android_client_info": {
+          "package_name": "com.example.childcare_tracker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzenCtJ0zRoeiCioVyVnA6B6aOUysNNIg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
